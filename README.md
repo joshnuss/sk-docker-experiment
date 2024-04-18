@@ -17,6 +17,18 @@ services:
     image: ghcr.io/joshnuss/sk-docker-experiment:latest
     ports:
       - "3000:3000"
+    environment:
+      - DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db?schema=public"
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=db
 ```
 
 Build and run:

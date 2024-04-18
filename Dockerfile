@@ -6,6 +6,7 @@ COPY package.json .
 COPY pnpm-lock.yaml .
 RUN pnpm install
 COPY . .
+RUN pnpm prisma generate
 RUN pnpm run build
 RUN pnpm prune --production
 
