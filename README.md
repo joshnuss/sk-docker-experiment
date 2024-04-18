@@ -4,9 +4,23 @@ Build a publish SvelteKit app to the GitHub container registry.
 
 ## Usage
 
+Create a `docker-compose.yml`:
+
+```yaml
+services:
+  - web:
+    image: ghcr.io/joshnuss/sk-docker-experiment
+    expose:
+      - "3000:3000"
+```
+
+Build and run:
+
 ```sh
 docker compose up
 ```
+
+Then visit: https://localhost:3000
 
 ## Credits
 
