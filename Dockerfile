@@ -1,4 +1,5 @@
 FROM node:21-alpine AS builder
+LABEL org.opencontainers.image.source="https://github.com/joshnuss/sk-docker-experiment"
 WORKDIR /app
 RUN npm install -g pnpm
 COPY package.json .
