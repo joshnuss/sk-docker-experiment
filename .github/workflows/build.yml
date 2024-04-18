@@ -1,4 +1,4 @@
-name: Deploy image to GHCR
+name: Deploy Docker image
 
 on:
   push:
