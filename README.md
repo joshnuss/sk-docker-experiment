@@ -1,6 +1,6 @@
 # Docker/SvelteKit Experiment
 
-Build a publish SvelteKit app to the GitHub container registry.
+This is an experiment to build a publish SvelteKit app to the GitHub container registry.
 
 ## Usage
 
